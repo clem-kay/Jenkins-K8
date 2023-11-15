@@ -19,4 +19,3 @@ spec:
         image: clementkoomson/web_site:v1  
         ports:
         - containerPort: 8080
-          hostPort: 80
