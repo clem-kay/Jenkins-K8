@@ -16,10 +16,7 @@ spec:
       containers:
       - name: webpage
       # this is the name of the image you pushed to docker hub
-        image: clementkoomson/webpage
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
+        image: clementkoomson/web_site:v1  
         ports:
         - containerPort: 8080
+          hostPort: 80
