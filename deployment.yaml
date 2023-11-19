@@ -4,7 +4,7 @@ metadata:
   name: webpage
 spec:
 # the number of pods to be running for the deployment
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: webpage
@@ -16,6 +16,8 @@ spec:
       containers:
       - name: webpage
       # this is the name of the image you pushed to docker hub
-        image: clementkoomson/web_site:v1  
+        image: aa7e414fdc/web_server:web_site  
         ports:
+        # doing the container and port binding
         - containerPort: 8080
+          hostPort: 80
