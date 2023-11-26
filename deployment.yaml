@@ -4,7 +4,7 @@ metadata:
   name: webpage
 spec:
 # the number of pods to be running for the deployment
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: webpage
